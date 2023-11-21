@@ -1,6 +1,3 @@
-
-
-
 #mylogo{
     display: block;
     margin-left: auto;
@@ -80,7 +77,7 @@ section {
     
 }
 section:nth-child(odd) {
-    background: #434343;
+    background: #ffffff;
 }
 input{
     width: 350px;
@@ -99,4 +96,117 @@ input{
 }
 h1{
     font-size: xx-large;
+    position:relative;
+    bottom: 240px;
+    right: 500px;
+}
+.a{
+    color: #000;
+}
+img{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    width: 50%;
+}
+#pone{
+    color: #000;
+    position: relative;
+    left : -10%;
+    bottom: 160px;
+    font-size: xx-large;
+}
+#ac{
+    position: relative;
+    top: 50%;
+}
+.b{
+    color: white;
+}
+#ptwo{
+    position: relative;
+    font-size: xx-large ;
+    bottom: 150px;
+    right: 9%;
+}
+#pthree{
+    color: #000;
+    font-size: xx-large;
+    position: relative;
+    bottom: 130px;
+    right: 9%;
+}
+#imgtwo{
+    position: absolute;
+    bottom: -5%;
+}
+#imgfour{
+    width: 20%;
+    position: absolute;
+    right: 10%;
+    left: 70%;
+
+}
+#pfour{
+    font-size: xx-large;
+    width: 1000px;
+    position: relative;
+    right: 300px;
+}
+#pfive{
+    color: #000;
+    font-size: xx-large;
+    position: relative;
+    right: 80px;
+    bottom: 80px;
+}
+#ol{
+    font-size: xx-large;
+    width: 40%;
+    position: relative;
+    right: 420px;
+}
+#table{
+    font-size: xx-large;
+    justify-content: space-between;
+}
+#btn{
+ color: #fff8f8;
+}
+.bnt::before,
+.bnt::after{
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background-color: inherit;
+    border-radius: inherit;
+    background-image: conic-gradient(
+    from var(--angle) at 50% 50%,
+    transparent 0%,
+    transparent 33%,
+    hsl(var (--primary)) 50%,
+    transparent 66%,
+    transparent 100%,
+    );
+    animation: rotate 2s infinite linear;
+    z-index: -1;
+}
+.bnt::before{
+    filter: blur(15px);
+}
+.inner{
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        100px circle at
+        var (--mouseX) var (--mouseY),
+        hsl(var(--primary)/0.3),
+        transparent 50%,
+    );
+    border-radius: inherit;
+    z-index: 0;
+    opacity: 0
+}
+.bnt:hover .inner{
+    opacity: 1;
 }
